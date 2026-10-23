@@ -1,0 +1,68 @@
+/* SIEM page refinements */
+.siem-page .ais-context-number > i {
+    color: #0d89f1;
+    font-size: 16px;
+}
+
+.siem-page .ais-hero-emblem > i {
+    font-size: 64px;
+}
+
+.siem-page .ais-card-top .ais-icon > i,
+.siem-page .ais-control-grid article > i {
+    color: #0d89f1;
+}
+
+.siem-page .ais-workflow-top > i,
+.siem-page .ais-principles i,
+.siem-page .ais-visual-tag i {
+    color: #54e0fc;
+}
+
+.siem-page .ais-case-record dd {
+    overflow-wrap: anywhere;
+}
+
+.siem-page .ais-case-footer {
+    align-items: flex-start;
+}
+
+.siem-page .ais-case-footer > i {
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.siem-page .ais-control-seal > i {
+    flex-shrink: 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .siem-page .ais-context-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .siem-page .ais-context-row > i {
+        align-self: flex-start;
+        margin-left: 11px;
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 1023px) {
+    .siem-page .ais-hero-emblem > i {
+        font-size: 48px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .siem-page .ais-case-identity {
+        align-items: flex-start;
+    }
+
+    .siem-page .ais-case-identity > .ais-icon {
+        flex-shrink: 0;
+    }
+}

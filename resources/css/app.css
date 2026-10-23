@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@import './home.css';
+@import './solutions.css';
+@import './services.css';
+@import './contact.css';
+@import './insights.css';
+@import './industries.css';
+@import './public-content.css';
+@import './ai-powered-security.css';
+@import './siem-automation.css';
+@import './threat-detection.css';
+@source '../views/**/*.blade.php';
+@source '../../public/assets/js/main.js';

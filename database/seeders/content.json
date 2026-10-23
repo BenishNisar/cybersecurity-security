@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "title": "AI Assisted SOC Investigations",
+      "slug": "soc-investigations",
+      "excerpt": "What makes a case brief useful, traceable and ready for analyst\n                                review?",
+      "category": "SOC OPERATIONS",
+      "image": "assets/images/operations-640.webp",
+      "body": "Start with the evidence\n\nAn investigation brief should make the evidence easier\n                                            to inspect. Permitted events, asset context and relevant\n                                            case history give the analyst a starting point. Source\n                                            references allow observations to be checked against the\n                                            original records.\n\nSeparate facts from open questions\n\nA useful brief distinguishes observed facts,\n                                            interpretation and missing context. AI can help align a\n                                            timeline and prepare next checks, but an unexplained\n                                            verdict is not a substitute for a reviewable account.\n\nKeep the decision with the analyst\n\nThe reviewer verifies the context and decides what\n                                            happens next. A named reviewer and the relevant approved\n                                            procedure make responsibility explicit. There should be\n                                            no silent case closure or unapproved production\n                                            response."
+    },
+    {
+      "title": "Designing Safer SIEM Automation",
+      "slug": "siem-automation",
+      "excerpt": "Why bounded queries, validation and permissions belong in the\n                                    workflow.",
+      "category": "SIEM & LOGS",
+      "image": "assets/images/network-640.webp",
+      "body": "Define the question first\n\nA bounded query starts with a clear analyst question\n                                                and agreed sources. The scope should identify what\n                                                evidence is needed, who may access it and which\n                                                system will execute the query.\n\nValidate before execution\n\nQuery syntax and access must be validated before\n                                                execution. Original logs and trusted counts remain\n                                                available for review. Explanations should make\n                                                collection and parsing gaps visible rather than hide\n                                                them.\n\nReview tuning as a change\n\nReviewed cases can inform a prioritised tuning\n                                                backlog. Proposed changes need coverage testing and\n                                                approval before they are accepted. Platform\n                                                capabilities and integration permissions must be\n                                                confirmed within the customer scope."
+    },
+    {
+      "title": "Turning Incident Lessons into Better Security Procedures",
+      "slug": "incident-lessons",
+      "excerpt": "Connect accepted case experience to company specific SOPs.",
+      "category": "PROCEDURES",
+      "image": "assets/images/cybersecurity-640.webp",
+      "body": "Begin with a reviewed case\n\nAn incident can reveal a delayed handover, an\n                                                unclear owner or missing evidence. Once the findings\n                                                are reviewed, those lessons can support a specific\n                                                procedure proposal.\n\nMake the proposal inspectable\n\nExplain what changes, why it changes and who is\n                                                responsible. Use approved policies, roles and\n                                                documentation as the knowledge foundation. Keep\n                                                assumptions and open questions visible to the\n                                                procedure owner.\n\nPublish with ownership\n\nThe procedure owner decides what is approved and\n                                                published. Testing, version history and an agreed\n                                                route back to the previous version make accepted\n                                                changes easier to manage. AI prepares the proposal;\n                                                it does not assume publication authority."
+    },
+    {
+      "title": "An Anomaly Is a Starting Point, Not a Verdict",
+      "slug": "behaviour-context",
+      "excerpt": "Add behaviour and operating context before escalating a signal.",
+      "category": "THREAT DETECTION",
+      "image": "assets/images/network-640.webp",
+      "body": "Ask what changed\n\nA deviation needs context. Relevant assets, expected\n                                                activity and reviewed case history help analysts\n                                                decide which differences deserve further checks\n                                                within an agreed scenario.\n\nTest the interpretation\n\nAn anomaly is not proof of an attack. Detection\n                                                logic and coverage need review, and explainable\n                                                operational changes should remain part of the\n                                                investigation. Context supports a decision rather\n                                                than replacing it."
+    },
+    {
+      "title": "Reporting That Keeps the Evidence in View",
+      "slug": "trusted-reporting",
+      "excerpt": "Connect technical findings to operational and management\n                                    decisions.",
+      "category": "SECURITY ANALYTICS",
+      "image": "assets/images/operations-640.webp",
+      "body": "Use validated inputs\n\nOperational reporting should start with validated\n                                                case data and trusted calculations. Source context\n                                                helps the reader understand what a finding means and\n                                                where the evidence is incomplete.\n\nMatch the output to the decision\n\nSecurity teams may need recurring issues and tuning\n                                                priorities. Leaders may need risk context and the\n                                                status of accepted improvements. Both views should\n                                                connect findings to decisions and distinguish\n                                                accepted changes from unresolved proposals."
+    },
+    {
+      "title": "Start with One Security Workflow",
+      "slug": "first-workflow",
+      "excerpt": "Define the evidence, owner and operating boundary before adding\n                                    assistance.",
+      "category": "CONTROLLED AI",
+      "image": "assets/images/cybersecurity-640.webp",
+      "body": "Choose a recurring task\n\nA focused investigation, procedure or reporting task\n                                                can be a useful starting point. Confirm the\n                                                evidence, the decision owner, the permitted systems\n                                                and the expected output before defining the\n                                                assistance.\n\nBuild on a usable foundation\n\nWhen telemetry, ownership or procedures are\n                                                incomplete, begin with readiness and engineering. AI\n                                                assistance should follow a usable evidence\n                                                foundation. Connect additional workflows only where\n                                                that improves a real operational task."
+    }
+  ]
+}

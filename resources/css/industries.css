@@ -1,0 +1,407 @@
+/* industries page start */
+
+    /* Industries page additions. Shared site components remain in the global stylesheet. */
+.industries-page .primary-nav .nav-home {
+    color: var(--brand-text);
+}
+.industries-page .nav-dropdown-toggle[aria-current="page"] {
+    color: #1130a2;
+}
+.industries-hero {
+    padding: 150px 0 66px;
+    background:
+        linear-gradient(100deg, #07152f 35%, #07152fe8),
+        url("/assets/images/hero-network.webp") right center / 50% auto no-repeat;
+}
+.industries-breadcrumb {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    color: #54e0fc;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.industries-breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: #c7d8e9;
+}
+.industries-hero h1 {
+    font-size: clamp(56px, 4.4vw, 68px);
+    line-height: 1.12;
+    letter-spacing: -0.05em;
+    margin-bottom: 26px;
+}
+.industries-lead {
+    max-width: 730px;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #b4cce0;
+    margin-bottom: 30px;
+}
+.industries-overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+.industries-overview .industry-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: white;
+}
+.industries-overview .industry-card > p {
+    font-size: 16px;
+    line-height: 1.85;
+}
+.industries-overview .industry-card .text-link {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 48px;
+    margin-top: auto;
+    padding-top: 22px;
+    border-top: 1px solid var(--brand-border);
+    font-size: 14px;
+}
+.industry-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 85px;
+    align-items: start;
+}
+.industry-detail > div {
+    min-width: 0;
+}
+.industry-context-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    background: #0d89f10a;
+    border: 1px solid #0d89f126;
+    border-radius: 14px;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.industry-context .section-heading {
+    margin-bottom: 28px;
+}
+.industry-context h2 {
+    font-size: clamp(40px, 3.2vw, 50px);
+    line-height: 1.2;
+}
+.industry-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #1130a2;
+    margin-bottom: 12px;
+    letter-spacing: 0.035em;
+}
+.industry-focus {
+    font-size: 18px;
+    line-height: 1.85;
+    margin: 0;
+}
+.industry-scope {
+    border-top: 1px solid #0d89f140;
+}
+.industry-scope-row {
+    display: flex;
+    gap: 22px;
+    border-bottom: 1px solid var(--brand-border);
+    padding: 28px 0;
+}
+.industry-scope-row > span {
+    flex: none;
+    font-size: 25px;
+    padding-top: 3px;
+}
+.industry-scope h3 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.industry-scope p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+}
+.industry-boundary {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    margin-top: 26px;
+    border: 1px solid #0d89f130;
+    border-left: 3px solid #0d89f1;
+    border-radius: 10px;
+    background: #0d89f108;
+}
+.industry-boundary > span {
+    font-size: 24px;
+    flex: none;
+    padding-top: 3px;
+}
+.industry-boundary h3 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #1130a2;
+    letter-spacing: 0.025em;
+}
+.industry-scope .industry-scope-note {
+    font-size: 14px;
+    margin-top: 22px;
+}
+.industry-detail-reverse .industry-context {
+    order: 2;
+}
+.industries-ot .industry-label,
+.industries-ot .industry-boundary h3 {
+    color: #54e0fc;
+}
+.industries-ot .industry-focus,
+.industries-ot .industry-scope p {
+    color: #b4cce0;
+}
+.industries-ot .industry-scope-row {
+    border-color: #ffffff20;
+}
+.industries-ot .industry-context-icon {
+    background: #12d1fd08;
+    border-color: #12d1fd30;
+}
+.industries-ot .industry-boundary {
+    background: #12d1fd08;
+    border-color: #12d1fd40;
+}
+.industry-controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+.industry-control {
+    padding: 30px;
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-card);
+    background: white;
+    min-width: 0;
+}
+.industry-control > i {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 25px;
+}
+.industry-control h3 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 17px;
+}
+.industry-control p {
+    font-size: 16px;
+    line-height: 1.85;
+    margin: 0;
+}
+.industry-steps {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.industry-steps::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #0d89f140;
+    top: 26px;
+    left: 26px;
+    right: 26px;
+}
+.industry-steps li {
+    position: relative;
+}
+.industry-steps li > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    background: #f3f8fc;
+    border: 1px solid #0d89f140;
+    color: #1130a2;
+    border-radius: 12px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.industry-steps h3 {
+    font-size: 23px;
+    line-height: 1.5;
+    margin: 0;
+}
+.industry-readiness {
+    font-size: 17px;
+    line-height: 1.85;
+    margin: 35px 0 0;
+    padding: 25px 28px;
+    background: #0d89f108;
+    border-left: 3px solid #0d89f1;
+    border-radius: 8px;
+}
+.industry-faq {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 75px;
+    align-items: start;
+}
+.industries-cta {
+    padding: 72px 0;
+}
+.industries-cta .contact-panel {
+    padding: 52px;
+}
+.industries-cta .contact-panel > div:first-child {
+    min-width: 0;
+}
+@media (max-width: 1279px) {
+    .industry-detail {
+        gap: 50px;
+    }
+    .industry-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .industry-faq {
+        gap: 40px;
+    }
+}
+@media (max-width: 1023px) {
+    .industries-overview {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .industry-detail {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .industry-detail-reverse .industry-context {
+        order: 0;
+    }
+    .industry-context h2 {
+        font-size: 44px;
+    }
+    .industry-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .industry-steps::before {
+        display: none;
+    }
+    .industry-faq {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+    .industries-cta .contact-panel {
+        padding: 42px;
+    }
+}
+@media (max-width: 767px) {
+    .industries-hero {
+        padding: 120px 0 50px;
+        background-size: 100% auto;
+    }
+    .industries-breadcrumb {
+        margin-bottom: 24px;
+    }
+    .industries-hero h1 {
+        font-size: 41px;
+        line-height: 1.15;
+    }
+    .industries-lead {
+        font-size: 17px;
+    }
+    .industries-overview,
+    .industry-controls {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .industry-context h2 {
+        font-size: 36px;
+    }
+    .industry-context-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 26px;
+    }
+    .industry-focus {
+        font-size: 17px;
+    }
+    .industry-scope-row {
+        gap: 18px;
+        padding: 25px 0;
+    }
+    .industry-boundary {
+        padding: 24px 21px;
+        gap: 16px;
+    }
+    .industry-control {
+        padding: 29px;
+    }
+    .industry-steps {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .industry-steps::before {
+        display: block;
+        top: 26px;
+        bottom: 26px;
+        left: 26px;
+        right: auto;
+        width: 1px;
+        height: auto;
+    }
+    .industry-steps li {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+    }
+    .industry-steps li > span {
+        flex: none;
+        margin: 0;
+    }
+    .industry-steps h3 {
+        font-size: 22px;
+    }
+    .industry-readiness {
+        font-size: 16px;
+        padding: 25px;
+    }
+    .industries-cta {
+        padding: 64px 0;
+    }
+    .industries-cta .contact-panel {
+        padding: 35px 26px;
+    }
+    .industries-cta .contact-panel h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 389px) {
+    .industries-hero h1 {
+        font-size: 38px;
+    }
+    .industry-context h2 {
+        font-size: 34px;
+    }
+    .industry-control {
+        padding: 26px;
+    }
+}
+
+
+/* industries page end */
